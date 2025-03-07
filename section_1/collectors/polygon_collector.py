@@ -2,9 +2,9 @@ import pandas as pd
 from datetime import datetime
 from typing import List, Dict
 
-from DE_Assignment.section_1.collectors.base_data_collector import BaseDataCollector
-from DE_Assignment.section_1.collectors.data_classes import StockRecord
-from DE_Assignment.section_1.models import SourceConfig
+from section_1.collectors.base_data_collector import BaseDataCollector
+from section_1.collectors.data_classes import StockRecord
+from section_1.models import SourceConfig
 
 
 class PolygonCollector(BaseDataCollector):

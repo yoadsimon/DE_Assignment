@@ -1,8 +1,8 @@
 from datetime import datetime
 from typing import List, Dict, Optional
-from DE_Assignment.section_1.collectors.base_data_collector import BaseDataCollector
-from DE_Assignment.section_1.collectors.data_classes import ExchangeRateRecord
-from DE_Assignment.section_1.models import SourceConfig
+from section_1.collectors.base_data_collector import BaseDataCollector
+from section_1.collectors.data_classes import ExchangeRateRecord
+from section_1.models import SourceConfig
 
 
 class FrankfurterExchangeRateCollector(BaseDataCollector):

@@ -8,8 +8,8 @@ from sqlalchemy.future import select
 from dotenv import load_dotenv
 from typing import List
 
-from DE_Assignment.section_1.collectors.data_classes import StockRecord, ExchangeRateRecord
-from DE_Assignment.section_1.models import SourceConfig
+from section_1.collectors.data_classes import StockRecord, ExchangeRateRecord
+from section_1.models import SourceConfig
 
 load_dotenv()
 Base = declarative_base()

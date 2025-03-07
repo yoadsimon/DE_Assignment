@@ -1,9 +1,9 @@
 from datetime import datetime
 
-from DE_Assignment.section_1.collectors.base_data_collector import BaseDataCollector
-from DE_Assignment.section_1.collectors.collectors import collectors
-from DE_Assignment.section_1.database import DbSettings, DbData
-from DE_Assignment.section_1.models import SourceConfig
+from section_1.collectors.base_data_collector import BaseDataCollector
+from section_1.collectors.collectors import collectors
+from section_1.database import DbSettings, DbData
+from section_1.models import SourceConfig
 
 
 def create_source(source):
@@ -27,7 +27,7 @@ if __name__ == "__main__":
         "source_id": 1,
         "source_type": "polygon",
         "url_additional": "NVDA",
-        "scrape_since": datetime(2025, 2, 1),
+        "scrape_since": datetime(2024, 2, 1),
         "token": "TbZ3iHiZyQtooWrx9kzwfL73hpdjeE0Y",
         "end_table": ""
     }
@@ -40,7 +40,7 @@ if __name__ == "__main__":
         "source_id": 2,
         "source_type": "frankfurter",
         "url_additional": "USD",
-        "scrape_since": datetime(2025, 2, 1),
+        "scrape_since": datetime(2024, 2, 1),
         "end_table": ""  # will be looked up (should resolve to "exchange_rate_records")
     }
     create_source(source=source2)
@@ -48,7 +48,7 @@ if __name__ == "__main__":
     print(stats)
 
     # Test for stock price conversion.
-    date = datetime(2025, 3, 3)
+    date = datetime(2024, 2, 5)
     stock_name = "NVDA"
     currency = "ILS"
     db_data = DbData()

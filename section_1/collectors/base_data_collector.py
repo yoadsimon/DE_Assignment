@@ -6,10 +6,11 @@ from tqdm import tqdm
 from typing import List, Dict, Optional
 import time
 
-from DE_Assignment.section_1.collectors.data_classes import StockRecord, ExchangeRateRecord
-from DE_Assignment.section_1.database import DbData
-from DE_Assignment.section_1.models import SourceConfig
 from requests.exceptions import HTTPError, RequestException
+
+from section_1.collectors.data_classes import StockRecord, ExchangeRateRecord
+from section_1.database import DbData
+from section_1.models import SourceConfig
 
 
 class BaseDataCollector(ABC):
