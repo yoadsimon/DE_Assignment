@@ -20,6 +20,8 @@ class PolygonCollector(BaseDataCollector):
         date_end_str = date_end.strftime("%Y-%m-%d")
         url = (f"{self.base_url}/v2/aggs/ticker/{ticker}/range/1/day/"
                f"{date_start_str}/{date_end_str}?adjusted=true&sort=asc&limit=120&apiKey={self.config.token}")
+        # Pagination is unnecessary
+        # the APIs support data requests spanning over one year.
         data = self._make_api_request(url)
         if "results" not in data:
             raise ValueError(f"Polygon response missing 'results': {data}")

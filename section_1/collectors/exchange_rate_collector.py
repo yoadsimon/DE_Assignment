@@ -28,6 +28,8 @@ class FrankfurterExchangeRateCollector(BaseDataCollector):
 
     def get_raw_data(self) -> List[Dict]:
         url = f"{self.base_url}{self.start_since.strftime('%Y-%m-%d')}..?base={self.config.url_additional}"
+        # Pagination is unnecessary
+        # the APIs support data requests spanning over one year.
         data = self._make_api_request(url)
         result_rates = [
             {"rates": rates, "date": date, "base_currency": self.config.url_additional}

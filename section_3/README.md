@@ -24,6 +24,7 @@
 - **MongoDB**: Flexible document store for enriched event data.
 - **Monitoring & Alerts**: CloudWatch, logs, or similar.
 - **BI Tools**: Visualization and reporting (Tableau, Looker, QuickSight, etc.).
+- Note: Implementation of most features can be done using AWS services - so its easier to manage and scale.
 
 ## 5. Implementation Brief
 - **Development**:
